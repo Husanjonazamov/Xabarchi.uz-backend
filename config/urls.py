@@ -22,7 +22,9 @@ from rest_framework import permissions
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
+    # path('api/', include('api.urls')),
+    path('', include('news.urls')),
+    
     # path('api/docs/', include_docs_urls(title='API Documentation', permission_classes=[permissions.AllowAny])),
 
 
